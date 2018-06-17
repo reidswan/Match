@@ -15,7 +15,7 @@ The following table provides an overview of Match's syntax. See [example.py](exa
 | Function      | Operator      | Action|
 | ------------- |-------------  | ----- |
 | `m.MATCH('a')` | `m['a']` | Match the supplied string exactly|
-| `m.BETWEEN('a', 'b')` | `m < ('a', 'b')` | Match a character in the range from 'a' to 'b'|
+| `m.BETWEEN('a','b')` | `m<('a','b')` | Match a character in the range from 'a' to 'b'|
 | `m.THEN(x)`| `m + x`| Perform the match defined by `m`; if it succeeds, perform the match defined by `x`|
 | `m.OR(x)` | `m \| x` | Perform the match defined by `m`; if it fails, backtrack and perform the match defined by `x`|
 | `m.NOT()` | `-m` | Match the first character of the string only if m fails to match |
