@@ -29,4 +29,4 @@ The following table provides an overview of Match's syntax. See [example.py](exa
 ### Notes:
 - `AGAIN()` is exponential -- for example, `m.AGAIN().AGAIN()` will peform `m`'s match four times, and `m.AGAIN().AGAIN().AGAIN()` eight.
 
--The dot notation for bound name referencing only works if `name` is a valid Python expression, whereas `REF` should work for all strings
+- The dot notation for bound name referencing only works if `name` is a valid Python expression, whereas `REF` should work for all strings
