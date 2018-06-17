@@ -98,4 +98,4 @@ n.BETWEEN('1', '9').STORE('non_zero_digit').OR(n.MATCH('0')).STORE('digit')\
 
 # once more for luck?
 _ = MatchDSL()
-((((+(_['0']|(~_['-']+((((((_<('1','9'))//'nzd')|_['0'])//'d').nzd++_.d)))//'int')[' ']//'ws')+_.int+_.ws)//'wint')++(_['+']+_.wint))//'sum'
+((((+((_['0']|(~_['-']+(((((_<('1','9'))//'nzd')|_['0'])//'d').nzd++_.d)))//'int')[' ']//'ws')+_.int+_.ws)//'wint')++(_['+']+_.wint))//'sum'
